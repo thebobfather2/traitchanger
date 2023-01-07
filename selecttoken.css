@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+.CustomMain {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    color: #ffffff;
+    -webkit-text-stroke-color: #000000;
+    -webkit-text-stroke: #000000;
+    -webkit-text-stroke-width: 2px;
+    text-shadow: 8px 8px #ff7c02;
+    font-family: 'DRIPINK PERSONAL USE', sans-serif;
+    font-size: 20vh;
+    text-align: center;
+}
+
+.MainContainer {
+    min-width: 80%;
+    display: flex;
+    margin: auto;
+    margin-top: 0;
+    padding: 0 20px;
+}
+
+.traitSelect {
+    display: block;
+    align-self: center;
+    width: 80%;
+    min-width: 30%;
+    background-color: rgba(255, 255, 255, 0.315);
+    padding: 50px;
+    border-radius: 20px;
+    position: relative;
+    margin: 5px;
+}
+
+.Heading {
+    padding: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #000000;
+    text-shadow: 5px 5px #f5830098;
+    font-size: 5vh;
+}
+
+.traitGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.traitIMG {
+    max-width: 150px;
+    margin: auto;
+}
+
+.images {
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    width: fit-content;
+    justify-content: center !important;
+    background-color: rgba(211, 95, 0, 0.164) !important;
+}
+
+.images:hover {
+    opacity: 60%;
+    cursor: pointer;
+}
+
+.Warning {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 2vw;
+}
+
+.clicked {
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    top: 0;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    opacity: 70%;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.selectedText {
+    text-align: center;
+    color: white;
+}
+
+.completePurchase {
+    margin-top: 10px;
+    margin-left: 20px;
+    min-width: 300px;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px !important;
+    color: white !important;
+    background-color: black !important;
+}
+
+.transactionBtn {
+    background-color: white !important;
+    margin-top: 50px !important;
+}
+
+.transactionCarot {
+    max-width: 150px;
+}
+
+.carots {
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 1000px) {
+    .MainContainer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title {
+        font-size: 5.5em;
+        text-align: center;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-top: -60px;
+    }
+
+    .Heading {
+        font-size: 4vh;
+    }
+
+    .completePurchase {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        max-width: 50%;
+    }
+
+    .traitSelect {
+        position: relative;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .MainContainer {
+        padding-bottom: 10px;
+    }
+
+    .traitIMG {
+        align-self: center;
+        max-width: 170px;
+    }
+
+    .transactionCarot {
+        max-width: 100px;
+    }
+.selectedText{
+    font-size: 1rem;
+}
+    .carots {
+        font-size: 1.5em;
+    }
+}
