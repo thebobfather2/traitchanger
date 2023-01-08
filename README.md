@@ -18,3 +18,15 @@
         </ul>  
     <li>How can we hide private key for update authority?</li>
 </ul>
+
+## Trait Combiner
+
+<ul>
+    <li>I've got a prototype html file working that functions as an online version of hashlips</li>
+        <ul>
+            <li>-> it creates one of one images with given traits</li>
+            <li>-> we need to add functions that allow users to select one trait per category, and this needs to be token gated so we will likely need to move this code to react-based .jsx</li>
+            <li>-> additional code must be added to generate the new .json metadata file for the new image</li>
+            <li>-> the image and .json file output will need to then be fed to arweave via mintertool.js, then finally to metaboss update command</li>
+        </ul>
+</ul>
