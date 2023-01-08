@@ -9,18 +9,48 @@
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
    }
 </style>
+<link rel="stylesheet" href="./traitcombiner.css">
 </head>
-<body>
-<h1>Combining multiple images into a single one</h1>
-<img class="image" src="./img/DesertSand.png"/>
-<img class="image" src="./img/RegularFox.png"/>
-<img class="image" src="./img/OriginalEdd.png"/>
-<img class="image" src="./img/WhiteShirt.png"/>
+
+<div>
+<h1>Update Your Fox</h1>
+
+<button onclick = "show()" id = "btn">  
+   Show Layers  
+</button>  
+
+<button onclick = "hide()" id = "btn">  
+   Hide Layers  
+</button>  
+
+<div id="div" style="display:none">
+   <img class="image" src="./img/DesertSand.png"/>
+   <img class="image" src="./img/RegularFox.png"/>
+   <img class="image" src="./img/HappyMouth.png"/>
+   <img class="image" src="./img/OriginalEdd.png"/>
+   <img class="image" src="./img/MalcolmXSuit.png"/>
+</div>
 <canvas class="result"></canvas>
 <br />
-<button class="Btn">CLICK HERE</button>
+<button id="generate">Generate New NFT</button>
+
 <h3>Click on the above button to combine the two images above together</h3>
-<script>
+
+<script>  
+   function show() {  
+   document.getElementById("div").style.display = "block";   
+   }  
+</script>
+
+<script>  
+   function hide() {  
+   document.getElementById("div").style.display = "none";   
+   }  
+</script> 
+
+<script src="./traitcombiner.js"></script>
+
+<!-- <script>
    let imgEle1 = document.querySelectorAll(".image")[0];
    let imgEle2 = document.querySelectorAll(".image")[1];
    let imgEle3 = document.querySelectorAll(".image")[2];
@@ -40,6 +70,6 @@
       context.globalAlpha = 1;
       context.drawImage(imgEle4, 0, 0);
    });
-</script>
+</script> -->
 </body>
 </html>
