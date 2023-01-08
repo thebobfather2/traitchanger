@@ -24,9 +24,11 @@
 <ul>
     <li>I've got a prototype html file working that functions as an online version of hashlips</li>
         <ul>
-            <li>-> it creates one of one images with given traits</li>
+            <li>-> it creates 1 of 1 images with given traits</li>
             <li>-> we need to add functions that allow users to select one trait per category, and this needs to be token gated so we will likely need to move this code to react-based .jsx</li>
             <li>-> additional code must be added to generate the new .json metadata file for the new image</li>
             <li>-> the image and .json file output will need to then be fed to arweave via mintertool.js, then finally to metaboss update command</li>
         </ul>
+    <li>First MVP will be a basic program with drop down menu to select traits and spit out combos - image only</li>
+    <li>Phase 2 will generate the json metadata and allow edits to blockchain</li>
 </ul>
