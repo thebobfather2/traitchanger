@@ -9,11 +9,64 @@
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
    }
 </style>
-<link rel="stylesheet" href="./traitcombiner.css">
+<link rel="stylesheet" href="./TraitCombiner/traitcombiner.css">
 </head>
 
-<div>
+<br>
 <h1>Update Your Fox</h1>
+
+ <h2>Select Your Traits</h2>
+<hr />
+Background:
+<select id="slct1" name="slct1">
+  <option value=""></option>
+  <option value="DesertSand">Desert Sand</option>
+  <option value="LakeBlue">Lake Blue</option>
+  <option value="Bronze">Bronze</option>
+</select>
+<hr />
+Skin:
+<select id="slct2" name="slct2">
+  <option value=""></option>
+  <option value="Regular">Regular</option>
+</select>
+<hr />
+Eyes:
+<select id="slct2" name="slct2">
+  <option value=""></option>
+  <option value="Regular">Regular</option>
+</select>
+<hr />
+Mouth:
+<select id="slct2" name="slct2">
+  <option value=""></option>
+  <option value="Regular">Regular</option>
+</select>
+<hr />
+Eyewear:
+<select id="slct2" name="slct2">
+  <option value=""></option>
+  <option value="Regular">Regular</option>
+</select>
+<hr />
+Headwear:
+<select id="slct2" name="slct2">
+  <option value=""></option>
+  <option value="Regular">Regular</option>
+</select>
+<hr />
+Shirt:
+<select id="slct2" name="slct2">
+  <option value=""></option>
+  <option value="Regular">Regular</option>
+</select>
+<hr />
+Accessories:
+<select id="slct2" name="slct2">
+  <option value=""></option>
+  <option value="Regular">Regular</option>
+</select>
+<hr />
 
 <button onclick = "show()" id = "btn">  
    Show Layers  
@@ -21,20 +74,26 @@
 
 <button onclick = "hide()" id = "btn">  
    Hide Layers  
-</button>  
+</button>
 
+<!-- need to find way to pass dropdown selections into these spaces -->
 <div id="div" style="display:none">
+   <!-- background -->
    <img class="image" src="./img/DesertSand.png"/>
+   <!-- skin -->
    <img class="image" src="./img/RegularFox.png"/>
+   <!-- mouth -->
    <img class="image" src="./img/HappyMouth.png"/>
+   <!-- eyes -->
    <img class="image" src="./img/OriginalEdd.png"/>
-   <img class="image" src="./img/MalcolmXSuit.png"/>
+   <!-- shirt -->
+   <img class="image" src="./img/WhiteShirt.png"/>
 </div>
 <canvas class="result"></canvas>
 <br />
 <button id="generate">Generate New NFT</button>
 
-<h3>Click on the above button to combine the two images above together</h3>
+<h3>Click on the button above to generate your new Fox</h3>
 
 <script>  
    function show() {  
@@ -48,7 +107,7 @@
    }  
 </script> 
 
-<script src="./traitcombiner.js"></script>
+<script src="./TraitCombiner/traitcombiner.js"></script>
 
 <!-- <script>
    let imgEle1 = document.querySelectorAll(".image")[0];
