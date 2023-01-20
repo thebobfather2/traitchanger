@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<div lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,61 +12,90 @@
 <link rel="stylesheet" href="./TraitCombiner/traitcombiner.css">
 </head>
 
-<br>
+<div class="main">
 <h1>Update Your Fox</h1>
-
+</div>
+<div class="widget">
  <h2>Select Your Traits</h2>
-<hr />
+ <div class="traitSelector">
 Background:
 <select id="slct1" name="slct1">
-  <option value=""></option>
-  <option value="DesertSand">Desert Sand</option>
-  <option value="LakeBlue">Lake Blue</option>
-  <option value="Bronze">Bronze</option>
+  <option id="None" value=""></option>
+  <option id="Beach" value="Beach">Beach</option>
+  <option id="DesertSand" value="DesertSand">Desert Sand</option>
+  <option id="LakeBlue" value="LakeBlue">Lake Blue</option>
+  <option id="Bronze" value="Bronze">Bronze</option>
 </select>
-<hr />
+<br />
 Skin:
 <select id="slct2" name="slct2">
   <option value=""></option>
+  <option value="BlankCanvas">Blank Canvas</option>
   <option value="Regular">Regular</option>
+  <option value="Blue">Blue</option>
+  <option value="Red">Red</option>
+  <option value="GalaxyPurple">Galaxy Purple</option>
+  <option value="CoolVibes">Cool Vibes</option>
+  <option value="Rainbow">Rainbow</option>
+  <option value="AlienGreen">Alien Green</option>
+  <option value="AuburnBlend">Auburn Blend</option>
+  <option value="BlueishGreen">Blueish Green</option>
+  <option value="GlowingOrange">Glowing Orange</option>
+  <option value="GreenPolkaDot">Green Polka Dot</option>
+  <option value="SkinCrawl">Skin Crawl</option>
 </select>
-<hr />
+<br />
 Eyes:
-<select id="slct2" name="slct2">
+<select id="slct3" name="slct3">
   <option value=""></option>
-  <option value="Regular">Regular</option>
+  <option value="Frog">Frog</option>
+  <option value="Loopy">Loopy</option>
+  <option value="OriginalEdd">Original Edd</option>
 </select>
-<hr />
+<br />
 Mouth:
-<select id="slct2" name="slct2">
+<select id="slct4" name="slct4">
   <option value=""></option>
-  <option value="Regular">Regular</option>
+  <option value="Happy">Happy</option>
+  <option value="Silly">Silly</option>
+  <option value="Calm">Calm</option>
 </select>
-<hr />
+<br />
 Eyewear:
-<select id="slct2" name="slct2">
+<select id="slct5" name="slct5">
   <option value=""></option>
   <option value="Regular">Regular</option>
 </select>
-<hr />
+<br />
 Headwear:
-<select id="slct2" name="slct2">
+<select id="slct6" name="slct6">
   <option value=""></option>
   <option value="Regular">Regular</option>
 </select>
-<hr />
+<br />
 Shirt:
-<select id="slct2" name="slct2">
+<select id="slct7" name="slct7">
   <option value=""></option>
   <option value="Regular">Regular</option>
 </select>
-<hr />
+<br />
 Accessories:
-<select id="slct2" name="slct2">
+<select id="slct8" name="slct8">
   <option value=""></option>
   <option value="Regular">Regular</option>
 </select>
-<hr />
+</div>
+</div>
+
+<!-- Create an image element for bg in your HTML code -->
+<img class="preview" id="myImagebg">
+<img class="preview" id="myImageskin">
+<img class="preview" id="myImageeyes">
+<img class="preview" id="myImagemouth">
+
+
+<!-- <button onclick="getBackground()"> Check Background </button>
+<button onclick="getSkin()"> Check Skin </button>
 
 <button onclick = "show()" id = "btn">  
    Show Layers  
@@ -74,26 +103,31 @@ Accessories:
 
 <button onclick = "hide()" id = "btn">  
    Hide Layers  
-</button>
+</button> -->
 
+
+<!-- testing getting image from dropdown: -->
+<!-- <select id="image-category">
+ <option>...</option>
+</select> -->
 <!-- need to find way to pass dropdown selections into these spaces -->
 <div id="div" style="display:none">
    <!-- background -->
-   <img class="image" src="./img/DesertSand.png"/>
+   <img class="image" src="./img/Background/Beach.png"/>
    <!-- skin -->
    <img class="image" src="./img/RegularFox.png"/>
    <!-- mouth -->
    <img class="image" src="./img/HappyMouth.png"/>
    <!-- eyes -->
-   <img class="image" src="./img/OriginalEdd.png"/>
+   <img class="image" src="./img/Eyes/Frog.png"/>
    <!-- shirt -->
    <img class="image" src="./img/WhiteShirt.png"/>
 </div>
 <canvas class="result"></canvas>
 <br />
-<button id="generate">Generate New NFT</button>
+<button id="generate"></button>
 
-<h3>Click on the button above to generate your new Fox</h3>
+<!-- <h3>Click on the button above to generate your new Fox</h3> -->
 
 <script>  
    function show() {  
@@ -107,7 +141,7 @@ Accessories:
    }  
 </script> 
 
-<script src="./TraitCombiner/traitcombiner.js"></script>
+<script src="./TraitCombiner/traitcombiner2.js"></script>
 
 <!-- <script>
    let imgEle1 = document.querySelectorAll(".image")[0];
