@@ -130,21 +130,6 @@ select4.addEventListener("change", function() {
     imgEle4.src = filePathmouth
 });
 
-// create filepath for eyewear
-function createFilePatheyewear() {
-  var select5 = document.getElementById("slct5");
-  var selectedValue5 = select5.options[select5.selectedIndex].value;
-  var filePatheyewear = "img/EyeWear/" + selectedValue5 + ".png";
-  return filePatheyewear;
-}
-// update image src for eyewear
-var select5 = document.getElementById("slct5");
-select5.addEventListener("change", function() {
-    var filePatheyewear = createFilePatheyewear();
-    var imgEle5 = document.getElementById("myImageeyewear");
-    imgEle5.src = filePatheyewear
-});
-
 // create filepath for headwear
 function createFilePathheadwear() {
   var select6 = document.getElementById("slct6");
@@ -160,6 +145,20 @@ select6.addEventListener("change", function() {
     imgEle6.src = filePathheadwear
 });
 
+// create filepath for eyewear
+function createFilePatheyewear() {
+  var select5 = document.getElementById("slct5");
+  var selectedValue5 = select5.options[select5.selectedIndex].value;
+  var filePatheyewear = "img/EyeWear/" + selectedValue5 + ".png";
+  return filePatheyewear;
+}
+// update image src for eyewear
+var select5 = document.getElementById("slct5");
+select5.addEventListener("change", function() {
+    var filePatheyewear = createFilePatheyewear();
+    var imgEle5 = document.getElementById("myImageeyewear");
+    imgEle5.src = filePatheyewear
+});
 
 // create filepath for shirt
 function createFilePathshirt() {
