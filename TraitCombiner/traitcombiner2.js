@@ -9,6 +9,8 @@ slct2.options[slct2.selectedIndex].id;
     let imgEle3 = "./img/" + slct3.value +'.png';
     let imgEle4 = document.querySelectorAll(".image")[3];
     let imgEle5 = document.querySelectorAll(".image")[4];
+    let imgEle6 = "./img/" + slct6.value +'.png';
+    let imgEle7 = "./img/" + slct7.value +'.png';
     let resEle = document.querySelector(".result");
     var context = resEle.getContext("2d");
     let generateEle = document.querySelector(".generate");
@@ -128,24 +130,18 @@ select4.addEventListener("change", function() {
     imgEle4.src = filePathmouth
 });
 
-// Create a JavaScript function that returns the file path that you want to display
-// function getImageUrl() {
-//   return "img/DesertSand.png";
-// }
 
-// // Use JavaScript to access the image element by its ID, and set its "src" attribute to the URL or file path returned by the function
-// var img = document.getElementById("myImage");
-// img.src = getImageUrl();
-
-// get image first try
-// document.getElementById('btn').onclick = function() {
-//   var val = document.getElementById('imagename').value,
-//       src = "./img/" + val +'.png',
-//       img = document.createElement('img');
-//       img.src = src;
-// img.setAttribute('width', '190px');
-// img.setAttribute('height', '190px');
-//       document.body.appendChild(img);
-// }
-
-console.log(imgEle1.value)
+// create filepath for shirt
+function createFilePathshirt() {
+  var select7 = document.getElementById("slct7");
+  var selectedValue7 = select7.options[select7.selectedIndex].value;
+  var filePathshirt = "img/Shirt/" + selectedValue7 + ".png";
+  return filePathshirt;
+}
+// update image src for shirt
+var select7 = document.getElementById("slct7");
+select7.addEventListener("change", function() {
+    var filePathshirt = createFilePathshirt();
+    var imgEle7 = document.getElementById("myImageshirt");
+    imgEle7.src = filePathshirt
+});
