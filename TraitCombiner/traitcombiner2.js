@@ -130,6 +130,36 @@ select4.addEventListener("change", function() {
     imgEle4.src = filePathmouth
 });
 
+// create filepath for eyewear
+function createFilePatheyewear() {
+  var select5 = document.getElementById("slct5");
+  var selectedValue5 = select5.options[select5.selectedIndex].value;
+  var filePatheyewear = "img/EyeWear/" + selectedValue5 + ".png";
+  return filePatheyewear;
+}
+// update image src for eyewear
+var select5 = document.getElementById("slct5");
+select5.addEventListener("change", function() {
+    var filePatheyewear = createFilePatheyewear();
+    var imgEle5 = document.getElementById("myImageeyewear");
+    imgEle5.src = filePatheyewear
+});
+
+// create filepath for headwear
+function createFilePathheadwear() {
+  var select6 = document.getElementById("slct6");
+  var selectedValue6 = select6.options[select6.selectedIndex].value;
+  var filePathheadwear = "img/Headwear/" + selectedValue6 + ".png";
+  return filePathheadwear;
+}
+// update image src for headwear
+var select6 = document.getElementById("slct6");
+select6.addEventListener("change", function() {
+    var filePathheadwear = createFilePathheadwear();
+    var imgEle6 = document.getElementById("myImageheadwear");
+    imgEle6.src = filePathheadwear
+});
+
 
 // create filepath for shirt
 function createFilePathshirt() {
@@ -144,4 +174,19 @@ select7.addEventListener("change", function() {
     var filePathshirt = createFilePathshirt();
     var imgEle7 = document.getElementById("myImageshirt");
     imgEle7.src = filePathshirt
+});
+
+// create filepath for accessory
+function createFilePathaccessory() {
+  var select8 = document.getElementById("slct8");
+  var selectedValue8 = select8.options[select8.selectedIndex].value;
+  var filePathaccessory = "img/Accessories/" + selectedValue8 + ".png";
+  return filePathaccessory;
+}
+// update image src for accessory
+var select8 = document.getElementById("slct8");
+select8.addEventListener("change", function() {
+    var filePathaccessory = createFilePathaccessory();
+    var imgEle8 = document.getElementById("myImageaccessory");
+    imgEle8.src = filePathaccessory
 });
