@@ -1,5 +1,4 @@
-
-    let imgEle1 = document.querySelectorAll(".image")[0];
+let imgEle1 = document.querySelectorAll(".image")[0];
     let imgEle2 = document.querySelectorAll(".image")[1];
     let imgEle3 = document.querySelectorAll(".image")[2];
     let imgEle4 = document.querySelectorAll(".image")[3];
